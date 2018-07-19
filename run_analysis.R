@@ -3,6 +3,7 @@ library(reshape2)
 #Set the working directory
 path <- setwd("C:/Users/Carlos Hinrichsen/DataQuiz4/UCI HAR Dataset")
 
+## 1) Merges the training and the test sets to create one data set
 # Read the features table
 features <- read.table("features.txt")
 
@@ -57,6 +58,7 @@ test_dataset = cbind(subject_test,x_test,y_test)
 #Merge the train and test data sets
 complete_dataSet = rbind(train_dataset,test_dataset)
 
+## 2) Extracts only the measurements on the mean and standard deviation for each measurement
 #Subset the complete data set, only with the columns related to the ID's, Mean and Standar Deviation
 subset_completedataset <- complete_dataSet[,c(grep("ID|[Mm]ean|[Ss]td",names(complete_dataSet)))]
 
@@ -66,6 +68,7 @@ subset_completedataset$act_ID <-activity_labels[,2][match(subset_completedataset
 #Save the name of the columns of the subset data set, to make some changes in the characters
 newcol_names <- colnames(subset_completedataset)
 
+## 3) Uses descriptive activity names to name the activities in the data set
 #Change the character "-mean" for "Mean", whichis more representative
 newcol_names <- gsub("-mean","Mean",newcol_names)
 
@@ -78,6 +81,7 @@ newcol_names <- gsub("[-]","->",newcol_names)
 #Change the charactera "(", ")" and "," for ""
 newcol_names <- gsub("[(),]","",newcol_names)
 
+## 4) Appropriately labels the data set with descriptive variable names
 #Change the name of the columns of the complete data set with these new column names
 colnames(subset_completedataset) <- newcol_names
 
@@ -87,6 +91,7 @@ q <- length(subset_completedataset[1,])
 #Reorder data set to have the first column the subj_ID and the second the act_ID, and then the rest
 subset_completedataset2 <- subset_completedataset[c(1,q,2:(q-1))]
 
+## 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
 #Use the melt function to reagroup the data set according to the id's (an all the respective measures in a separate column)
 melt_subset <- melt(subset_completedataset2, id= c("subj_ID","act_ID"))
 
