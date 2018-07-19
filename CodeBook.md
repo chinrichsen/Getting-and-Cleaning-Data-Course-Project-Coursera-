@@ -14,6 +14,24 @@ For each record in the dataset it is provided:
 4) Its activity label. 
 5) An identifier of the subject who carried out the experiment
 
+## Data sets used for the analysis (txt format) in order of use
+
+1) "features.txt"
+
+2) "activity_labels.txt"
+
+3) "subject_train.txt"
+
+4) "X_train.txt"
+
+5) "y_train.txt"
+
+6) "subject_test.txt"
+
+7) "X_test.txt"
+
+8) "y_test.txt"
+
 ## Data transformation
 
 To accomplish the goals of the project, the main required steps were:
