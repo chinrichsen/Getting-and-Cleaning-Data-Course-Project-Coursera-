@@ -20,9 +20,11 @@ You should create one R script called run_analysis.R that does the following.
 
 1) Be sure to install the reshape package first
 
-2) Set you own working directory. You can do this changing the path in the third line of the code in the run_analysis.R script
+2) Set your own working directory. You can do this changing the path in the third line of the code in the run_analysis.R script
 
-3) Run the script run_analysis.R
+4) Download the data information to your working directory. Be sure to uncompressed the .zip file. The link of the data is: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+5) Run the script run_analysis.R
 
 ## Files in this repo
 
