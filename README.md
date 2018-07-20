@@ -16,6 +16,22 @@ You should create one R script called run_analysis.R that does the following.
 4) Appropriately labels the data set with descriptive variable names.
 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-The required script, run_analysis.R, is available in this repo, and the general explanation of how it works you can find it in the codebook, CodeBook.md
+## How to do the analysis
 
-Finally, in this repo you can find the output of the run_analysis.R script, which is a tidy data set called tidy_data_set.txt (step 5 of the objectives)
+1) Be sure to install the reshape package first
+
+2) Set you own working directory. You can do this changing the path in the third line of the code in the run_analysis.R script
+
+3) Run the script run_analysis.R
+
+## Files in this repo
+
+You can find:
+
+1) The required script, run_analysis.R
+
+2) CodeBook.md: Gives a general explanation about the main data set, their attributes, the data sets used, the variables used and the data transofrmation process
+
+3) tidy_data_set.txt: Is the required data set with the average of each variable for each activity and each subject
+
+4) README.md: Explains the main description of the project, the description of the used data, the objectives and how to the the required analysis
