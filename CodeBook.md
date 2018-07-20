@@ -32,6 +32,110 @@ For each record in the dataset it is provided:
 
 8) "y_test.txt"
 
+## Variables used
+
+### The ID variables used were
+
+1) "subj_ID"
+
+2) "act_ID"
+
+### Considering the calculation of the Mean, the variables used were (the variables signed with *, have x, y and z coordinates)
+ 
+1) "tBodyAccMean"*
+
+2) "tBodyAccStd"*
+
+3) "tGravityAccMean"
+
+4) "tBodyAccJerkMean"*
+
+5) "tBodyGyroMean"*
+
+6) "tBodyGyroJerkMean"*
+
+7) "tBodyAccMagMean"
+
+8) "tGravityAccMagMean"
+
+9) "tBodyAccJerkMagMean"
+
+10) "tBodyGyroMagMean"
+
+11) "tBodyGyroJerkMagMean"
+
+12) "fBodyAccMean"*
+
+13) "fBodyAccMeanFreq"*
+
+14) "fBodyAccJerkMean"*
+
+15) "fBodyAccJerkMeanFreq"*
+
+16) "fBodyGyroMean"*
+
+17) "fBodyGyroMeanFreq"*
+
+18) "fBodyAccMagMean"
+
+19) "fBodyAccMagMeanFreq"
+
+20) "fBodyBodyAccJerkMagMean"
+
+21) "fBodyBodyAccJerkMagMeanFreq"
+
+22) "fBodyBodyGyroMagMean"
+
+23) "fBodyBodyGyroMagMeanFreq"
+
+24) "fBodyBodyGyroJerkMagMean"
+
+25) "fBodyBodyGyroJerkMagMeanFreq"
+
+26) "angletBodyAccMeangravity"         
+
+27) "angletBodyAccJerkMeangravityMean"
+
+28) "angletBodyGyroMeangravityMean"    
+
+29) "angletBodyGyroJerkMeangravityMean"
+
+30) "anglegravityMean"*
+
+### Considering the calculation of the Standard Deviation, the variables used were (the variables signed with *, have x, y and z coordinates)
+
+1) "tGravityAccStd"*
+
+2) "tBodyAccJerkStd"*               
+
+3) "tBodyGyroStd"*                  
+
+4) "tBodyGyroJerkStd"*
+
+5) "tBodyAccMagStd"
+
+6) "tGravityAccMagStd"                
+
+7) "tBodyAccJerkMagStd"
+
+8) "tBodyGyroMagStd"                  
+
+9) "tBodyGyroJerkMagStd"              
+
+10) "fBodyAccStd"*
+
+11) "fBodyAccJerkStd"*
+
+12) "fBodyGyroStd"*                  
+                  
+13) "fBodyAccMagStd"
+              
+14) "fBodyBodyAccJerkMagStd"           
+
+15) "fBodyBodyGyroMagStd"
+         
+16) "fBodyBodyGyroJerkMagStd"          
+
 ## Data transformation
 
 To accomplish the goals of the project, the main required steps were:
@@ -86,61 +190,6 @@ b) Calculate the mean of the melted data set, considering the combinations of su
 c) Create a tidy data set in text file
 
 d) Create a tidy data set in csv file
-
-## Variables used
-
-### The ID variables used were
-
-1) "subj_ID"
-
-2) "act_ID"
-
-### Considering the calculation of the mean, the variables used were
- 
-1) "tBodyAccMean->X"
-2) "tBodyAccMean->Y"                  
- [5] "tBodyAccMean->Z"                   "tBodyAccStd->X"                   
- [7] "tBodyAccStd->Y"                    "tBodyAccStd->Z"                   
- [9] "tGravityAccMean->X"                "tGravityAccMean->Y"               
-[11] "tGravityAccMean->Z"                "tGravityAccStd->X"                
-[13] "tGravityAccStd->Y"                 "tGravityAccStd->Z"                
-[15] "tBodyAccJerkMean->X"               "tBodyAccJerkMean->Y"              
-[17] "tBodyAccJerkMean->Z"               "tBodyAccJerkStd->X"               
-[19] "tBodyAccJerkStd->Y"                "tBodyAccJerkStd->Z"               
-[21] "tBodyGyroMean->X"                  "tBodyGyroMean->Y"                 
-[23] "tBodyGyroMean->Z"                  "tBodyGyroStd->X"                  
-[25] "tBodyGyroStd->Y"                   "tBodyGyroStd->Z"                  
-[27] "tBodyGyroJerkMean->X"              "tBodyGyroJerkMean->Y"             
-[29] "tBodyGyroJerkMean->Z"              "tBodyGyroJerkStd->X"              
-[31] "tBodyGyroJerkStd->Y"               "tBodyGyroJerkStd->Z"              
-[33] "tBodyAccMagMean"                   "tBodyAccMagStd"                   
-[35] "tGravityAccMagMean"                "tGravityAccMagStd"                
-[37] "tBodyAccJerkMagMean"               "tBodyAccJerkMagStd"               
-[39] "tBodyGyroMagMean"                  "tBodyGyroMagStd"                  
-[41] "tBodyGyroJerkMagMean"              "tBodyGyroJerkMagStd"              
-[43] "fBodyAccMean->X"                   "fBodyAccMean->Y"                  
-[45] "fBodyAccMean->Z"                   "fBodyAccStd->X"                   
-[47] "fBodyAccStd->Y"                    "fBodyAccStd->Z"                   
-[49] "fBodyAccMeanFreq->X"               "fBodyAccMeanFreq->Y"              
-[51] "fBodyAccMeanFreq->Z"               "fBodyAccJerkMean->X"              
-[53] "fBodyAccJerkMean->Y"               "fBodyAccJerkMean->Z"              
-[55] "fBodyAccJerkStd->X"                "fBodyAccJerkStd->Y"               
-[57] "fBodyAccJerkStd->Z"                "fBodyAccJerkMeanFreq->X"          
-[59] "fBodyAccJerkMeanFreq->Y"           "fBodyAccJerkMeanFreq->Z"          
-[61] "fBodyGyroMean->X"                  "fBodyGyroMean->Y"                 
-[63] "fBodyGyroMean->Z"                  "fBodyGyroStd->X"                  
-[65] "fBodyGyroStd->Y"                   "fBodyGyroStd->Z"                  
-[67] "fBodyGyroMeanFreq->X"              "fBodyGyroMeanFreq->Y"             
-[69] "fBodyGyroMeanFreq->Z"              "fBodyAccMagMean"                  
-[71] "fBodyAccMagStd"                    "fBodyAccMagMeanFreq"              
-[73] "fBodyBodyAccJerkMagMean"           "fBodyBodyAccJerkMagStd"           
-[75] "fBodyBodyAccJerkMagMeanFreq"       "fBodyBodyGyroMagMean"             
-[77] "fBodyBodyGyroMagStd"               "fBodyBodyGyroMagMeanFreq"         
-[79] "fBodyBodyGyroJerkMagMean"          "fBodyBodyGyroJerkMagStd"          
-[81] "fBodyBodyGyroJerkMagMeanFreq"      "angletBodyAccMeangravity"         
-[83] "angletBodyAccJerkMeangravityMean"  "angletBodyGyroMeangravityMean"    
-[85] "angletBodyGyroJerkMeangravityMean" "angleXgravityMean"                
-[87] "angleYgravityMean"                 "angleZgravityMean"
 
 ## Data source
 
